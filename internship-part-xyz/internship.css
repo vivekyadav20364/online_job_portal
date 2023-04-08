@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* ----------------------########-------CSS FOR NAV-BAR AND LOGO --------------#######---------------   */
+
+header {
+  background: white;
+}
+.logoANDbars {
+  /* border:2px solid red; */
+  padding: 0.5rem 1rem;
+}
+.logoANDbars .logo img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar {
+  /* padding: 1.5rem; */
+}
+.navbar ul li {
+  padding: 1rem 2rem;
+   text-align: center;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-transform: uppercase;
+ 
+  font-weight: 600;
+}
+
+.navigation #sign-in li {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+
+  margin-top: 0.6rem;
+  background: #3d70ff;
+  border-radius: 7px;
+}
+.navigation #sign-in li a {
+  color: white;
+}
+
+
+
+
+  /* ============================------ CSS FOR All Category   -----------=======================  */
+  
+  
+  
+  .all-category ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom:1px solid grey;
+}
+.all-category ul li{
+ border:1px solid grey;
+ padding:1rem 1.2rem;
+ border-radius: 8px;
+ margin: 3px;
+}
+.all-category ul li a{
+ color:#204B97;
+ font-weight: 600;
+}
+.all-category ul li:hover{
+  
+  background: rgba(45, 165, 201, 0.71);
+}
+
+
+  /* ====================================== Css for All job SEction ======================  */
+
+
+  .job-containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #E7F2F8;
+  }
+
+.job-containers .container {
+
+     max-width:408px;
+     width:350px;
+     height:365px;
+     border: 1px solid red;
+     padding:1rem;
+     margin:2rem 1rem;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+     transition: transform 0.2s linear;
+     font-family: 'Open Sans', sans-serif;
+     background: #fff;
+     border-radius: 6px;
+     cursor: pointer;
+
+}
+
+.job-containers .container h1{
+    font-size: 1.125rem;
+}
+.job-containers .container p{
+    line-height: 30px;
+}
+.job-containers .container .dark{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.job-containers .container:hover{
+    transform: scale(1.05,1.05);
+}
+
+
+
+
+
+/* ---------========================== MEDIA QURIES FOR NAVBAR AND LOGO  =====================--------  */
+
+@media screen and (min-width: 720px) {
+  .three-bars {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+  }
+  .navbar ul li a{
+  color:#204B97;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar ul li a:hover {
+    color: #3d70ff;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    position:absolute;
+    /* top:0; */
+    transform: translateX(-301px);
+    width: 300px;
+    transition: transform ease-in-out 0.3s;
+    /* background: hsla(224, 100%, 62%, 0.685); */
+    border: 4px solid blue; 
+    background: #3d70ff;
+    height:60vh;
+  }
+  .navbar li a{
+    color:white;
+   
+  }
+
+  .navbar li:hover {
+    background: #1902b0;
+    border-bottom: 1px solid white;
+  }
+  .mb-nan-visible {
+    transform: translateX(0px);
+  }
+  .three-bars {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  #sign-in{
+    display: none;
+  }
+}

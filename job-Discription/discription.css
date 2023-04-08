@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* ----------------------########-------CSS FOR NAV-BAR AND LOGO --------------#######---------------   */
+
+header {
+  background: white;
+}
+.logoANDbars {
+  /* border:2px solid red; */
+  padding: 0.5rem 1rem;
+}
+.logoANDbars .logo img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar {
+  /* padding: 1.5rem; */
+}
+.navbar ul li {
+  padding: 1rem 2rem;
+   text-align: center;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-transform: uppercase;
+ 
+  font-weight: 600;
+}
+
+.navigation #sign-in li {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+
+  margin-top: 0.6rem;
+  background: #3d70ff;
+  border-radius: 7px;
+}
+.navigation #sign-in li a {
+  color: white;
+}
+
+
+/* ------------------------------------------  big-discription-box --------------------- */
+.big-discription-box{
+  border: 2px solid red;
+  padding:1.5rem 2rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: rgba(113, 113, 242, 0.783);
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+
+
+/* ====================================--- job-discription section ---================================  */
+
+#job-discription{
+  width:80%;
+  /* border:2px solid red; */
+  margin: 20px auto;
+}
+
+#job-discription .main-dicription{
+  /* border:2px solid red; */
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+#job-discription .main-dicription-details{
+  /* border:2px solid red; */
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* ================================= discription button =============================  */
+
+.main-dicription .job-btn{
+padding: 0.5rem 0.6rem;
+background: rgba(40, 138, 218, 0.486);
+font-weight: 600;
+font-size: 1.1rem;
+}
+
+
+/* -----------##############----------- MEDIA QURIES FOR NAVBAR AND LOGO --------------------#########----------- */
+
+@media screen and (min-width: 720px) {
+    .three-bars {
+      display: none;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-bottom: 1px solid black;
+    }
+    .navbar ul li a{
+    color:#204B97;
+    }
+
+    .navbar ul {
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar ul li a:hover {
+      color: #3d70ff;
+    }
+  }
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    position:absolute;
+    /* top:0; */
+    transform: translateX(-301px);
+    width: 300px;
+    transition: transform ease-in-out 0.3s;
+    /* background: hsla(224, 100%, 62%, 0.685); */
+    border: 4px solid blue; 
+    background: #3d70ff;
+    height:60vh;
+  }
+  .navbar li a{
+    color:white;
+   
+  }
+
+  .navbar li:hover {
+    background: #1902b0;
+    border-bottom: 1px solid white;
+  }
+  .mb-nan-visible {
+    transform: translateX(0px);
+  }
+  .three-bars {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  #sign-in{
+    display: none;
+  }
+}

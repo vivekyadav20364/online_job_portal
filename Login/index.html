@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .home1 {
+           position: absolute;
+           top:30px;
+           left:80px;
+        }
+       .home1 button{
+           padding: 0.5rem 1rem;
+           background: #070707;
+           border: 1px solid grey;
+           border-radius: 8px;
+           outline:none;
+           font-size: 1.2rem;
+           font-weight: 600;
+           cursor: pointer;
+           color:white;
+       }
+   </style>
+
+</head>
+<body>
+
+    <a href="../Home-part/home.html" class="home1"> <button>Go Home</button> </a>
+
+    <div id="form-container">
+       <h2>Login</h2>
+       <form action="" onsubmit="return formvalidate()">  <!-- If formvalidate return true then it submit other wise not -->
+          <input type="text" placeholder="User name" id="username"><br>
+          <p id="userError" class="error"></p>
+          <input type="password" placeholder="Password" id="password"><br>
+          <p id="passError" class="error"></p>
+          <input type="submit" id="btn">
+       </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

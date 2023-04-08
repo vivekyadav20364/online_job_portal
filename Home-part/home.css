@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* ----------------------########-------CSS FOR NAV-BAR AND LOGO --------------#######---------------   */
+#main{
+  position: sticky;
+  top:0;
+  z-index: 700;
+}
+header {
+  background: white;
+}
+.logoANDbars {
+  /* border:2px solid red; */
+  padding: 0.5rem 1rem;
+}
+.logoANDbars .logo img {
+  width: 120px;
+  cursor: pointer;
+}
+
+.resister{
+  background: #3d70ff;
+  padding: 0 1rem;
+  height: 40px;
+  margin-top: 10px;
+  
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+}
+/* .navbar #sign-in {
+ display: flex;
+ flex-direction: row;
+
+} */
+.navbar ul li {
+  padding: 1rem 2rem;
+   text-align: center;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-transform: uppercase;
+ 
+  font-weight: 600;
+}
+
+.navigation #sign-in li {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+
+  margin-top: 0.6rem ;
+  /* margin-left: 8px; */
+  background: #3d70ff;
+  border-radius: 7px;
+}
+.navigation #sign-in li a {
+  color: white;
+}
+
+
+
+/* ----------------################----------CSS FOR HERO SECTION --------------##############--------------  */
+
+#hero{
+    width:100%;
+    height:90vh;
+    margin: 0px auto;
+    /* border: 2px solid green; */
+
+    background-image:url("../images/new-home-img.jpg");
+    background-position:top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    width:100%;
+    height: 80%;
+
+}
+.hero-content-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content:baseline;
+    font-size: 2rem;
+
+    padding-left: 1rem; 
+    
+    /* border:2px solid red;    */
+}
+.hero-content-right {
+   width:140px;
+    /* border:2px solid red; */
+    margin:5rem 3rem;
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    text-align: center;
+    background: rgb(52, 51, 51);
+    
+}
+.hero-content-right a
+{
+  color:white;
+  font-size: 1.1rem;
+}
+
+
+
+
+/* ----------------#############-------------- css for company cards----------#############----------- */
+
+#company #company-names{
+/* border: 2px solid red; */
+width:90%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+margin:2rem auto;
+
+
+}
+.company-data .box-1,.company-data .box-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 auto;
+    width:100%;
+    /* border: 2px solid rgb(198, 186, 23); */
+    
+}
+#company #company-names .data{
+    /* border: 2px solid green; */
+    width:390px;
+    min-width:17rem;
+    height:480px;
+    margin-right: 1rem;
+    padding:30px;
+    /* box-shadow: 0px 0 5px rgb(1 ,41 ,112 / 8%); */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background:#E7F2F8;
+    
+}
+
+ #company-names .data .data-1,.data .data-2, .data .data-3{
+    /* border:2px solid rgb(196, 12, 165); */
+width:100%;
+height: 100%;
+text-align: center;
+ 
+}
+
+
+.data .data-1 i,.data .data-2 i, .data .data-3 i{
+    font-size: 6rem;
+    color:#3d70ff
+}
+
+.btn{
+    padding:0.6rem 2rem;
+    color:white;
+    font-size:1.2rem;
+    background:#3D70F3;
+    border:none;
+    outline:none;
+    border-radius: 5px;;
+}
+/* ================================================================== */
+
+
+/* <img src="../images/chat-box1.jpg" alt=""> */
+.chat-box{
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  border-radius: 50%;
+  
+  }
+  .chat-box img{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+
+
+/* =========================Css for testimonial =======================================  */
+
+
+
+.testimonial{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 1px solid grey;
+  padding: 10px 20px;
+}
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2C3447;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+ 
+  box-sizing: border-box;
+  
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
+}
+
+/* =============================------------ CSS FOR FOOTER----------- ========================================== */
+footer{
+    /* background:#E7F2F8; */
+    background: rgb(36, 35, 35);
+    color: white;
+}
+ .footer-top{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1.5rem 0;
+   border-bottom:1px solid black ;
+   border-top:1px solid black;
+ }
+ .footer-top .foot-one{
+    font-size: 1.3rem;
+ }
+ .footer-top .foot-two{
+  font-size: 1.1rem;
+
+ }
+
+ .footer-top .foot-three{
+    font-size:1.3rem;
+ }
+ .footer-top .foot-three i{
+ color:grey ;
+ cursor: pointer;
+ font-size: 2rem;
+ margin-left:1rem;
+ margin-top:1rem
+}
+.footer-top .foot-three i:hover{
+    color:#2a68db;
+}
+.footer-bottom{
+text-align: center;
+font-size:1.3rem
+}
+
+
+/* ============================================== CSS for four box section ====================== -----------  */
+
+
+#job-inter-box{
+  /* border: 2px solid red; */
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+ .job-box{
+  border: 1px solid rgb(90, 89, 89);
+  border-radius: 10px;
+  width:380px;
+  min-width: 300px;
+  height:350px;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  margin-top:10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+
+.img-portal img
+{
+  height:150px;
+  width: 150px;
+  border:2px solid black;
+  border-radius: 50%;
+}
+
+
+
+/* ==============================================Slider section=========================== */
+
+
+#slider{
+  position:relative;
+  border:1px solid rgb(5, 5, 5);
+    width:75%;
+       height:400px;
+       margin: 20px auto;
+
+  }
+
+  #img-tag{
+    width: 100%;
+    height:400px;
+  }
+
+
+
+/* ===================== ----------------- Css for about section -----------========== */
+
+#about{
+border:3px solid red;
+}
+#about .about-left{
+
+}
+#about .about-right{
+
+}
+
+
+
+/* -----------##############----------- MEDIA QURIES FOR NAVBAR AND LOGO --------------------#########----------- */
+
+@media screen and (min-width: 720px) {
+    .three-bars {
+      display: none;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-bottom: 1px solid black;
+    }
+    .navbar ul li a{
+    color:#204B97;
+    }
+
+    .navbar ul {
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar ul li a:hover {
+      color: #3d70ff;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+  .navbar {
+    position:absolute;
+    /* top:0; */
+    transform: translateX(-301px);
+    width: 300px;
+    transition: transform ease-in-out 0.3s;
+    /* background: hsla(224, 100%, 62%, 0.685); */
+    border: 4px solid blue; 
+    background: #3d70ff;
+    height:60vh;
+  }
+  .navbar li a{
+    color:white;
+   
+  }
+  .navbar li:hover {
+    background: #1902b0;
+    border-bottom: 1px solid white;
+  }
+  .mb-nan-visible {
+    transform: translateX(0px);
+  }
+  .three-bars {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  #sign-in{
+    display: none;
+  }
+}
+
+/* --------------#########--------- MEDIA QURIES FOR  Hero section -------------- ##############----------------  */
+  
+@media screen and (max-width:1175px){
+    .hero-content-left{
+         font-size: 1.7rem;
+    }
+    .hero-content-right img{
+        width:500px;
+        height:368px;
+    }
+  }
+  @media screen and (max-width:1010px){
+   
+    .hero-content-left{
+         font-size: 1.6rem;
+    }
+    .hero-content-right img{
+        /* width:470;
+        height:346px; */
+        width:680px;
+        height:380px;
+        /* height:422px; */
+        border-radius: 10px;
+    }
+    .hero-content{
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:575px){
+    .hero-content-left{
+         font-size: 1.7rem;
+    }
+    .hero-content-right img{
+        width:380px;
+        height:280px;
+    }
+    #hero{
+        width:100%;
+    }
+     /* ============== html size decrease ===========-------=== */
+    html{
+        font-size: 75%;
+    }
+  }
+  @media screen and (max-width:440px){
+    .hero-content-left{
+         font-size: 1.7rem;
+    }
+    .hero-content-right img{
+        width:320px;
+        height:280px;
+    }
+  }
+
+   /* --------------media quries for company-name section ================================== -------- */
+
+   @media screen and (max-width:1010px){
+    .box-1 .data .data-3{
+       
+    }
+   }
+
+   /* --------------media quries for footer section ================================== -------- */
+   @media screen and (max-width:550px){
+   .footer-top
+   {
+    flex-direction:column ;
+    /* align-items: flex-start; */
+    
+   }
+   .foot-one,.foot-two,.foot-three{
+    margin-bottom: 2rem;
+    align-items: center;
+    
+   }
+   .foot-two li{
+    font-size: 1.3rem;
+   }
+   
+   }
+
+   /* ======================== media quries  testimonial section =================  */
+
+     @media screen and (max-width:800px) {
+      .testimonial {
+        flex-direction: column;
+      }
+     }
+  
